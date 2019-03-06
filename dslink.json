@@ -1,0 +1,46 @@
+{
+  "name": "dslink-java-monitoring",
+  "version": "0.1.0",
+  "description": "An implementation dslink of a simple processes and port monitoring",
+  "license": "MIT",
+  "author": {
+    "name": "Lukáš Hruška",
+    "email": "lukyhruska96@gmail.com"
+  },
+  "main": "bin/dslink-java-monitoring",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimacTechnik/dslink-java-monitoring"
+  },
+  "bugs": {
+    "url": "https://github.com/SimacTechnik/dslink-java-monitoring/issues"
+  },
+  "configs": {
+    "name": {
+      "type": "string",
+      "default": "monitoring"
+    },
+    "broker": {
+      "type": "url"
+    },
+    "token": {
+      "type": "string"
+    },
+    "nodes": {
+      "type": "path",
+      "default": "nodes.json"
+    },
+    "key": {
+      "type": "path",
+      "default": ".key"
+    },
+    "log": {
+      "type": "enum",
+      "default": "info"
+    },
+    "handler_class": {
+      "type": "string",
+      "default": "cz.simac.monitoring.MonitoringDSLink"
+    }
+  }
+}
